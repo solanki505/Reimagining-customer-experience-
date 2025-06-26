@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./style.css";
-
+import { Link } from "react-router-dom";
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -21,7 +21,7 @@ const Navbar = () => {
         <li><a href="/ar-experience">AR/VR Experience</a></li>
         <li><a href="/insights">Customer Insights</a></li>
         <li><a href="/checkout">Smart Checkout</a></li>
-        <li><a href="/team">Team</a></li>
+        <li><Link to="/signin">Sign In</Link></li> 
         <li><a href="/contact">Contact</a></li>
       </ul>
     </nav>
