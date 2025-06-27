@@ -13,18 +13,40 @@ const SignUp = () => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
+  // ...existing code...
+const handleSubmit = async (e) => {
+  e.preventDefault();
 
-    if (formData.password !== formData.confirmPassword) {
-      alert("Passwords do not match!");
-      return;
+  if (formData.password !== formData.confirmPassword) {
+    alert("Passwords do not match!");
+    return;
+  }
+
+  try {
+    const response = await fetch("http://localhost:8000/signup", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        name: formData.name,
+        email: formData.email,
+        password: formData.password,
+      }),
+    });
+
+    if (response.ok) {
+      alert("Signup successful!");
+      redirect("/login");
+    } else {
+      const errorData = await response.json();
+      alert(errorData.message || "Signup failed!");
     }
-
-    // You can connect this to your backend or Firebase here
-    console.log("User signed up:", formData);
-    alert("Signup successful!");
-  };
+  } catch (error) {
+    alert("An error occurred. Please try again.");
+  }
+};
+// ...existing code...
 
   return (
     <div className="signup-container">

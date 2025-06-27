@@ -10,14 +10,30 @@ const Login = () => {
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
+const handleSubmit = async (e) => {
+  e.preventDefault();
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
+  try {
+    const response = await fetch("http://localhost:8000/login", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(formData),
+    });
 
-    // Add your login logic or backend call here
-    console.log("User logged in:", formData);
-    alert("Login successful! (mock)");
-  };
+    if (response.ok) {
+      alert("Login successful!");
+      redirect("/");
+    } else {
+      const errorData = await response.json();
+      alert(errorData.message || "Login failed!");
+    }
+  } catch (error) {
+    alert("An error occurred. Please try again.");
+  }
+};
+
 
   return (
     <div className="login-container">
