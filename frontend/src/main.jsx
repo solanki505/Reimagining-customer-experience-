@@ -6,6 +6,7 @@ import './style.css';
 import HomePage from './Homepage.jsx';
 import SignIn from './SignUp.jsx'; 
 import Login from './Login.jsx';
+import ThreeDPage from './ThreeDPage.jsx';
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <BrowserRouter>
@@ -14,6 +15,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
         <Route path="/" element={<HomePage />} />
         <Route path="/signin" element={<SignIn />} /> 
         <Route path="/login" element={<Login />} /> {/* 👈 SignIn route */}
+        <Route path="/3d" element={<ThreeDPage />} />
         {/* Add more routes like /signup, /solutions, etc. here */}
       </Routes>
     </BrowserRouter>

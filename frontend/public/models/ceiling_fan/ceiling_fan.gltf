@@ -1,0 +1,494 @@
+{
+  "accessors": [
+    {
+      "bufferView": 2,
+      "componentType": 5126,
+      "count": 3632,
+      "max": [
+        1.1013208627700806,
+        1.1013208627700806,
+        -0.0623713955283165
+      ],
+      "min": [
+        -1.1013208627700806,
+        -1.1013208627700806,
+        -0.11774489283561707
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 43584,
+      "componentType": 5126,
+      "count": 3632,
+      "max": [
+        1.0,
+        1.0,
+        0.9960851669311523
+      ],
+      "min": [
+        -1.0,
+        -1.0,
+        -0.9960893392562866
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 3,
+      "componentType": 5126,
+      "count": 3632,
+      "max": [
+        0.9992839694023132,
+        0.9992838501930237,
+        0.9989132285118103,
+        1.0
+      ],
+      "min": [
+        -0.999284029006958,
+        -0.9992841482162476,
+        -0.9918966293334961,
+        1.0
+      ],
+      "type": "VEC4"
+    },
+    {
+      "bufferView": 1,
+      "componentType": 5126,
+      "count": 3632,
+      "max": [
+        0.8278856873512268,
+        0.8689822554588318
+      ],
+      "min": [
+        0.195039302110672,
+        0.0028983403462916613
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 29056,
+      "componentType": 5126,
+      "count": 3632,
+      "max": [
+        0.8278856873512268,
+        0.8689822554588318
+      ],
+      "min": [
+        0.195039302110672,
+        0.0028983403462916613
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 58112,
+      "componentType": 5126,
+      "count": 3632,
+      "max": [
+        0.8278856873512268,
+        0.8689822554588318
+      ],
+      "min": [
+        0.195039302110672,
+        0.0028983403462916613
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 0,
+      "componentType": 5125,
+      "count": 9144,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 87168,
+      "componentType": 5126,
+      "count": 6173,
+      "max": [
+        0.2734692394733429,
+        0.2734692692756653,
+        1.0608023405075073
+      ],
+      "min": [
+        -0.2734692692756653,
+        -0.2734692692756653,
+        -0.3065367043018341
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 161244,
+      "componentType": 5126,
+      "count": 6173,
+      "max": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "min": [
+        -1.0,
+        -1.0,
+        -1.0
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 3,
+      "byteOffset": 58112,
+      "componentType": 5126,
+      "count": 6173,
+      "max": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "min": [
+        -1.0,
+        -1.0,
+        -1.0,
+        -1.0
+      ],
+      "type": "VEC4"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 87168,
+      "componentType": 5126,
+      "count": 6173,
+      "max": [
+        0.9868582487106323,
+        0.9971016049385071
+      ],
+      "min": [
+        0.002898372244089842,
+        0.0028983200900256634
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 136552,
+      "componentType": 5126,
+      "count": 6173,
+      "max": [
+        0.9868582487106323,
+        0.9971016049385071
+      ],
+      "min": [
+        0.002898372244089842,
+        0.0028983200900256634
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 185936,
+      "componentType": 5126,
+      "count": 6173,
+      "max": [
+        0.9868582487106323,
+        0.9971016049385071
+      ],
+      "min": [
+        0.002898372244089842,
+        0.0028983200900256634
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 36576,
+      "componentType": 5125,
+      "count": 18102,
+      "type": "SCALAR"
+    }
+  ],
+  "asset": {
+    "extras": {
+      "author": "Guy in a Poncho (https://sketchfab.com/ponchoguy)",
+      "license": "CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)",
+      "source": "https://sketchfab.com/3d-models/ceiling-fan-d169d7328e4641e39e003c06ea0021ec",
+      "title": "Ceiling Fan"
+    },
+    "generator": "Sketchfab-16.29.0",
+    "version": "2.0"
+  },
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteLength": 108984,
+      "name": "floatBufferViews",
+      "target": 34963
+    },
+    {
+      "buffer": 0,
+      "byteLength": 235320,
+      "byteOffset": 108984,
+      "byteStride": 8,
+      "name": "floatBufferViews",
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 235320,
+      "byteOffset": 344304,
+      "byteStride": 12,
+      "name": "floatBufferViews",
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 156880,
+      "byteOffset": 579624,
+      "byteStride": 16,
+      "name": "floatBufferViews",
+      "target": 34962
+    }
+  ],
+  "buffers": [
+    {
+      "byteLength": 736504,
+      "uri": "ceiling_fan.bin"
+    }
+  ],
+  "extensionsUsed": [
+    "KHR_materials_emissive_strength"
+  ],
+  "images": [
+    {
+      "uri": "textures/ceiling_fan_baseColor.png"
+    },
+    {
+      "uri": "textures/ceiling_fan_metallicRoughness.png"
+    },
+    {
+      "uri": "textures/ceiling_fan_emissive.png"
+    },
+    {
+      "uri": "textures/ceiling_fan_normal.png"
+    }
+  ],
+  "materials": [
+    {
+      "doubleSided": true,
+      "emissiveFactor": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "emissiveTexture": {
+        "index": 2
+      },
+      "extensions": {
+        "KHR_materials_emissive_strength": {
+          "emissiveStrength": 2.0
+        }
+      },
+      "name": "ceiling_fan",
+      "normalTexture": {
+        "index": 3
+      },
+      "occlusionTexture": {
+        "index": 1
+      },
+      "pbrMetallicRoughness": {
+        "baseColorTexture": {
+          "index": 0
+        },
+        "metallicRoughnessTexture": {
+          "index": 1
+        }
+      }
+    }
+  ],
+  "meshes": [
+    {
+      "name": "ceiling_fan_blades_ceiling_fan_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 1,
+            "POSITION": 0,
+            "TANGENT": 2,
+            "TEXCOORD_0": 3,
+            "TEXCOORD_1": 4,
+            "TEXCOORD_2": 5
+          },
+          "indices": 6,
+          "material": 0,
+          "mode": 4
+        }
+      ]
+    },
+    {
+      "name": "ceiling_fan_body_ceiling_fan_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 8,
+            "POSITION": 7,
+            "TANGENT": 9,
+            "TEXCOORD_0": 10,
+            "TEXCOORD_1": 11,
+            "TEXCOORD_2": 12
+          },
+          "indices": 13,
+          "material": 0,
+          "mode": 4
+        }
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "children": [
+        1
+      ],
+      "matrix": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        2.220446049250313e-16,
+        -1.0,
+        0.0,
+        0.0,
+        1.0,
+        2.220446049250313e-16,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "name": "Sketchfab_model"
+    },
+    {
+      "children": [
+        2
+      ],
+      "matrix": [
+        0.009999999776482582,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.009999999776482582,
+        0.0,
+        0.0,
+        -0.009999999776482582,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "name": "6c4cb0fb6cb14518b963a12fd1ba928d.fbx"
+    },
+    {
+      "children": [
+        3,
+        5
+      ],
+      "name": "RootNode"
+    },
+    {
+      "children": [
+        4
+      ],
+      "matrix": [
+        100.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        -1.629206793918314e-05,
+        -99.99999999999868,
+        0.0,
+        0.0,
+        99.99999999999868,
+        -1.629206793918314e-05,
+        0.0,
+        0.0,
+        36.80448532104492,
+        5.9604644775390625e-06,
+        1.0
+      ],
+      "name": "ceiling_fan_blades"
+    },
+    {
+      "mesh": 0,
+      "name": "ceiling_fan_blades_ceiling_fan_0"
+    },
+    {
+      "children": [
+        6
+      ],
+      "matrix": [
+        100.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        -1.629206793918314e-05,
+        -99.99999999999868,
+        0.0,
+        0.0,
+        99.99999999999868,
+        -1.629206793918314e-05,
+        0.0,
+        0.0,
+        36.80448532104492,
+        5.9604644775390625e-06,
+        1.0
+      ],
+      "name": "ceiling_fan_body"
+    },
+    {
+      "mesh": 1,
+      "name": "ceiling_fan_body_ceiling_fan_0"
+    }
+  ],
+  "samplers": [
+    {
+      "magFilter": 9729,
+      "minFilter": 9987,
+      "wrapS": 10497,
+      "wrapT": 10497
+    }
+  ],
+  "scene": 0,
+  "scenes": [
+    {
+      "name": "Sketchfab_Scene",
+      "nodes": [
+        0
+      ]
+    }
+  ],
+  "textures": [
+    {
+      "sampler": 0,
+      "source": 0
+    },
+    {
+      "sampler": 0,
+      "source": 1
+    },
+    {
+      "sampler": 0,
+      "source": 2
+    },
+    {
+      "sampler": 0,
+      "source": 3
+    }
+  ]
+}
