@@ -24,6 +24,3 @@ mongoose.connect(db_path).then(() => {
 }).catch((err) => {
   console.error('MongoDB connection error:', err);
 })
-
-const sketchfabProxy = require('./routes/sketchfabProxy');
-app.use('/api', sketchfabProxy);
