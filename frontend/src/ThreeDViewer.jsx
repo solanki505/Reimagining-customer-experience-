@@ -80,7 +80,6 @@ const ThreeDViewer = ({ height = 700 }) => {
             className="result-item"
             onClick={() => handleModelClick(model)}
           >
-            <div className="result-index">#{idx + 1}</div>
             <img
               src={model.thumbnail}
               alt={model.name}
