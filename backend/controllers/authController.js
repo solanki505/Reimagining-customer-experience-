@@ -43,8 +43,17 @@ exports.postLogin = async (req, res) => {
       return res.status(401).json({ message: "Invalid email or password." });
     }
     console.log("User logged in successfully:", user);
-    res.status(200).json({ message: "Login successful!" });
+    req.session.user = user;
+    return res.status(200).json({ message: "Login successful!" });
   } catch (err) {
-    res.status(500).json({ message: "Server error." });
+    console.error("Login error:", err); // Add this line
+    return res.status(500).json({ message: "Server error." });
   }
 };
+exports.postLogout=async(req,res,next)=>{
+  console.log("came to post logout");
+  await req.session.destroy(()=>{
+    console.log("session destroyed");
+    res.redirect('/login');
+  });
+}

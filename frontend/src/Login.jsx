@@ -1,12 +1,13 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "./Login.css"; 
+import { useNavigate } from "react-router-dom";
 const Login = () => {
   const [formData, setFormData] = useState({
     email: "",
     password: "",
   });
-
+  const navigate = useNavigate(); 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
@@ -24,7 +25,9 @@ const handleSubmit = async (e) => {
 
     if (response.ok) {
       alert("Login successful!");
-      redirect("/");
+      sessionStorage.setItem("isLoggedIn", "true");
+      window.dispatchEvent(new Event("storage")); // Trigger storage event manually
+      navigate("/");
     } else {
       const errorData = await response.json();
       alert(errorData.message || "Login failed!");
@@ -61,7 +64,7 @@ const handleSubmit = async (e) => {
         <button type="submit">Sign In</button>
 
         <p className="signup-link">
-          Don’t have an account? <Link to="/signin">Sign Up</Link>
+          Don't have an account? <Link to="/signin">Sign Up</Link>
         </p>
       </form>
     </div>
