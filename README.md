@@ -42,7 +42,7 @@ We propose a **multi-modal customer engagement system** that brings together:
 
 - 🎨 **Solanki Sarkar** – Frontend (React.js), UI/UX, Web Scraping for product suggestions
 - 🧠 **Tirthankar Pal** – Backend APIs and Database (Express.js)
-- 🎤 **Samrishha Haldar** – Voice Assistant Integration
+- 🎤 **Samridhha Haldar** – Voice Assistant Integration
 - 🕶️ **Ritik Maurya** – AR/VR Feature Implementation
 
 ---
