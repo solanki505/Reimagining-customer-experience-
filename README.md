@@ -10,7 +10,7 @@ Our project for the **Sparkathon Walmart Hackathon** leverages **emerging techno
 
 ## 🎯 Problem Statement
 
-**How might we use AI, immersive technologies, and data-driven insights to redefine customer experiences in retail spaces?**
+**Reimagining customer experience with emerging technologies**
 
 ---
 
