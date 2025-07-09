@@ -4,8 +4,15 @@ import { Link } from "react-router-dom";
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isLoggedIn, setIsLoggedIn] = useState(false);
+  const [isDarkMode, setIsDarkMode] = useState(false);
   useEffect(() => {
     setIsLoggedIn(sessionStorage.getItem("isLoggedIn") === "true");
+    // Check for saved theme preference
+    const savedTheme = localStorage.getItem("theme");
+    if (savedTheme) {
+      setIsDarkMode(savedTheme === "dark");
+      document.documentElement.setAttribute("data-theme", savedTheme);
+    }
     // Optionally, add a storage event listener for multi-tab sync
     const handleStorage = () => {
       setIsLoggedIn(sessionStorage.getItem("isLoggedIn") === "true");
@@ -14,6 +21,14 @@ const Navbar = () => {
     return () => window.removeEventListener("storage", handleStorage);
   }, []);
   const toggleMenu = () => setIsOpen(!isOpen);
+  
+  const toggleTheme = () => {
+    const newTheme = isDarkMode ? "light" : "dark";
+    setIsDarkMode(!isDarkMode);
+    document.documentElement.setAttribute("data-theme", newTheme);
+    localStorage.setItem("theme", newTheme);
+  };
+  
   const handleLogout = async() => {
     sessionStorage.removeItem("isLoggedIn");
     setIsLoggedIn(false);
@@ -45,16 +60,46 @@ const Navbar = () => {
           </>
         )}
         {!isLoggedIn ? (
-          <li><Link to="/signin">Sign In</Link></li>
+          <>
+            <li><Link to="/signin">Sign In</Link></li>
+            <li className="theme-toggle-container">
+              <label className="theme-toggle-switch">
+                <input 
+                  type="checkbox" 
+                  checked={isDarkMode} 
+                  onChange={toggleTheme}
+                  aria-label={isDarkMode ? "Switch to Light Mode" : "Switch to Dark Mode"}
+                />
+                <span className="slider">
+                  <span className="slider-icon">{isDarkMode ? "🌙" : "☀️"}</span>
+                </span>
+              </label>
+            </li>
+          </>
         ) : (
-          <li>
-            <button
-              onClick={handleLogout}
-              style={{ background: "none", border: "none", color: "inherit", cursor: "pointer" }}
-            >
-              Logout
-            </button>
-          </li>
+          <>
+            <li>
+              <button
+                onClick={handleLogout}
+                className="logout-btn"
+              >
+                Logout
+              </button>
+            </li>
+            <li className="theme-toggle-container">
+              <label className="theme-toggle-switch">
+                <input 
+                  type="checkbox" 
+                  checked={isDarkMode} 
+                  onChange={toggleTheme}
+                  aria-label={isDarkMode ? "Switch to Light Mode" : "Switch to Dark Mode"}
+                />
+                <span className="slider">
+                  <span className="slider-icon">{isDarkMode ? "🌙" : "☀️"}</span>
+                </span>
+              </label>
+            </li>
+          </>
         )}
       </ul>
     </nav>

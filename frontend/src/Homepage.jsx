@@ -19,6 +19,14 @@ const features = [
     title: "Customer Insights",
     desc: "Real-time dashboards to analyze preferences, feedback, and predict trends.",
   },
+  {
+    title: "Voice Shopping",
+    desc: "Browse and purchase products hands-free using natural voice commands and AI speech recognition.",
+  },
+  {
+    title: "Smart Inventory",
+    desc: "IoT-powered inventory management with real-time stock tracking and automated restocking alerts.",
+  },
 ];
 
 const HomePage = () => {
@@ -62,17 +70,21 @@ const HomePage = () => {
 
       <section className="contact-team">
         <div className="contact-box">
-          <h2>Contact Us</h2>
-          <p>Email: team@retailfuture.tech</p>
-          <p>Phone: +91-99999-99999</p>
+          <h2>Get in Touch</h2>
+          <p>support@retailfuture.tech</p>
+          <p>+1 (555) 123-4567</p>
+          <p style={{marginTop: '1.5rem', color: '#64748b', fontSize: '0.9rem'}}>
+            Ready to transform your retail experience? Contact us for a demo or consultation.
+          </p>
         </div>
 
         <div className="team-box">
-          <h2>Meet the Team</h2>
+          <h2>Meet Our Team</h2>
           <ul>
-            <li>Solanki Sarkar - Frontend & AI Integrations</li>
-            <li>Teammate 2 - AR/VR Engineer</li>
-            <li>Teammate 3 - Backend & Smart Checkout</li>
+            <li>Solanki Sarkar - Frontend Developer & UI/UX Designer</li>
+            <li>Tirthankar Pal - Backend Developer & Database Engineer</li>
+            <li>Samridhha Haldar - Voice Assistant Developer</li>
+            <li>Ritik Maurya - AR/VR Developer</li>
           </ul>
         </div>
       </section>
