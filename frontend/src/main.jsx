@@ -10,7 +10,7 @@ import ThreeDPage from './ThreeDPage.jsx';
 import ModelPage from './ModelPage.jsx';
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <BrowserRouter>
+    <BrowserRouter basename="/Walmart-sparkathon">
       <Navbar />
       <Routes>
         <Route path="/" element={<HomePage />} />
