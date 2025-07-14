@@ -99,7 +99,7 @@ We propose a **multi-modal customer engagement system** that brings together:
 ## 📦 How to Run Locally
 
 1. **Clone the repository**  
-   `git clone https://github.com/solanki505/Walmart-sparkathon`
+   `git clone https://github.com/solanki505/Reimagining-customer-experience-`
 
 2. **Frontend**  
 ```bash
