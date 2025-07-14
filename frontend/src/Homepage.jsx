@@ -1,6 +1,7 @@
 import React from "react";
 import "./HomePage.css";
-import ThreeDViewer from './ThreeDViewer';
+import ThreeDViewer from './ThreeDViewer' ;
+import { Link } from "react-router-dom";
 
 const features = [
   {
@@ -35,7 +36,7 @@ const HomePage = () => {
       <header className="hero">
         <h1>Retail Reimagined</h1>
         <p>Innovating the Future of Customer Experience</p>
-        <a href="/3d" style={{
+        <Link to="/3d" style={{
           display: 'inline-block',
           marginTop: 16,
           padding: '12px 28px',
@@ -46,7 +47,7 @@ const HomePage = () => {
           fontSize: '1.2em',
           textDecoration: 'none',
           boxShadow: '0 2px 8px rgba(0,0,0,0.15)'
-        }}>Explore 3D Models</a>
+        }}>Explore 3D Models</Link>
       </header>
 
       <section className="cards-section">

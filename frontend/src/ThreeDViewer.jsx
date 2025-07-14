@@ -26,6 +26,7 @@ const ThreeDViewer = ({ height = 700 }) => {
         }
       );
       const data = await res.json();
+      console.log(data);
       const found = data.results.map((m) => ({
         name: m.name,
         uid: m.uid,
